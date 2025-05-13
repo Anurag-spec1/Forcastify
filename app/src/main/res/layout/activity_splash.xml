@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="#D7FDAA"
+    android:layout_height="match_parent"
+    tools:context=".splash">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="45sp"
+    android:text="Forcastify"
+    android:id="@+id/fr"
+    android:layout_centerVertical="true"
+    android:gravity="center"
+    android:textColor="#5D03FB"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/weather"
+        android:padding="80dp"
+        android:layout_above="@id/fr"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:visibility="visible"
+        android:indeterminate="true"
+        android:layout_below="@+id/fr"/>
+
+
+</RelativeLayout>
