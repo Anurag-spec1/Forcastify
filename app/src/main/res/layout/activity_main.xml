@@ -44,11 +44,22 @@
             android:orientation="vertical"
             android:gravity="center">
 
-            <ImageView
-                android:id="@+id/weatherIcon"
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnimation"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
-                android:src="@drawable/cloudy" />
+                android:layout_centerInParent="true"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/sunny"
+                app:lottie_speed="1.0" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/weatherIcon"-->
+<!--                android:layout_width="140dp"-->
+<!--                android:layout_height="140dp"-->
+<!--                android:src="@drawable/cloudy" />-->
 
             <TextView
                 android:id="@+id/weatherConditionText"

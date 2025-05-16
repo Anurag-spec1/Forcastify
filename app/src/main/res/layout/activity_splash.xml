@@ -4,33 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:background="#D7FDAA"
+    android:background="@drawable/backgroundweather"
     android:layout_height="match_parent"
     tools:context=".splash">
 
 <TextView
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:textSize="45sp"
-    android:text="Forcastify"
+    android:textSize="55sp"
+    android:text="Weather"
+    android:fontFamily="@font/main_font_2"
     android:id="@+id/fr"
-    android:layout_centerVertical="true"
-    android:gravity="center"
-    android:textColor="#5D03FB"/>
-    <ImageView
+    android:layout_below="@id/constImg"
+    android:layout_marginTop="40dp"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/white"/>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/weather"
-        android:padding="80dp"
-        android:layout_above="@id/fr"/>
+        android:fontFamily="@font/leaguespartansemibold"
+        android:text="Forcast"
+        android:textSize="48sp"
+        android:layout_marginTop="-15dp"
+        android:layout_below="@+id/fr"
+        android:textColor="#FFD500"
+        android:paddingStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtConst"/>
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/freepik"
+        android:id="@+id/constImg"
+        android:layout_marginTop="80dp" />
 
     <ProgressBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginTop="50dp"
         android:visibility="visible"
         android:indeterminate="true"
-        android:layout_below="@+id/fr"/>
+        android:indeterminateTint="@color/white"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
 
 </RelativeLayout>
